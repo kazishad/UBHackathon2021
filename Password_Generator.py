@@ -15,17 +15,17 @@ for i in range(int(user_input)):
     # 2 = uppercase letter
     # 3 = lowercase letter
     # 4 = special characters
-    character_type = random.randrange(0,5)
+    character_type = random.randint(1,4)
     if (character_type == 1):
-        password_string+= str(random.randrange(0,9))
+        password_string+= str(random.randint(0,9))
     elif (character_type == 2):
-        random_character = random.randrange(0,23)
+        random_character = random.randint(0,23)
         password_string += string.ascii_uppercase[random_character]
     elif (character_type == 3):
-        random_character = random.randrange(0,23)
+        random_character = random.randint(0,23)
         password_string += string.ascii_lowercase[random_character]
     elif (character_type == 4):
-        random_character = random.randrange(0,23)
+        random_character = random.randint(0,24)
         password_string += special[random_character]
 print(password_string)
 
