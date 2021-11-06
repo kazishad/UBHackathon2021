@@ -33,6 +33,6 @@ def generator():
     print(password_string)
 
 password_multiplayer = input("How many password would you like to generate:")
-user_input = input("How many characters should the password be: ")
+user_input = input("How many characters should the passwords be: ")
 for i in range(int(password_multiplayer)):
     generator()
