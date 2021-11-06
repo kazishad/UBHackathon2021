@@ -27,6 +27,10 @@ for i in range(int(user_input)):
     elif (character_type == 4):
         random_character = random.randint(0,24)
         password_string += special[random_character]
+    
+text_file = open("password.txt", "w")
+text_file.write(password_string)
+text_file.close
 print(password_string)
 
 
